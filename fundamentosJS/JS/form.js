@@ -41,9 +41,13 @@ submitButton.addEventListener("click", (event) => {
     (errorMessage.textContent = "Por favor preencha todos os campos!"),
     (errorMessage.classList = "error")
   } else {
-    //fazer os valores dos inputs aparecerem nos 'itens'
-    items.children[0].textContent = nameValue
-    items.children[1].textContent = emailValue
+    //fazendo uma 'lista dinâmica' para mostrar os dados digitados
+    const li = document.createElement("li") //criando o elemento lista ('li')
+    li.classList = "items" //setando a classe da lista
+    li.innerHTML = `Nome: ${nameValue} <br/> Email: ${emailValue}`
+    //adicionado a li criado acima na UL(html)
+
+    items.appendChild(li) //adicionando um child ao elemento
   }
 })
 
@@ -55,5 +59,3 @@ if (nameValue !== "" || emailValue !== "") {
     emailInput.value = ""
   })
 }
-
-//teste personal acces token 2
