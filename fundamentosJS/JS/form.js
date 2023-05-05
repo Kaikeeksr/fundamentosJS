@@ -53,7 +53,7 @@ submitButton.addEventListener("click", (event) => {
 
 // limpando os dados do formulário
 if (nameValue !== "" || emailValue !== "") {
-  cleanButton.addEventListener("dblclick", (event) => {
+  cleanButton.addEventListener("click", (event) => {
     event.preventDefault()
     nameInput.value = ""
     emailInput.value = ""

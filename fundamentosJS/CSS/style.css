@@ -49,7 +49,7 @@ header {
   padding: 8px;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
 }
 
 .btn {
@@ -73,8 +73,8 @@ header {
 }
 
 .error {
-  background: orangered;
-  color: #fff;
+  background: #f4f4f4;
+  color: orangered;
   padding: 5px;
   margin: 5px;
 }
