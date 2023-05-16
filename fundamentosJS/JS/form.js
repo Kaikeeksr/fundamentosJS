@@ -8,7 +8,6 @@ const emailInput = document.querySelector("#email")
 const form = document.querySelector("my-form")
 
 const errorMessage = document.querySelector(".msg")
-
 // método 1 -  clicar no botão com 1 click = itens somes, 2 clicks eles voltam a aparecer
 //Adicionando evento que muda o comportamento dos itens (aparecer e sumir)
 buttonHide.addEventListener("click", (event) => {
